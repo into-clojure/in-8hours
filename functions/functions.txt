@@ -1,0 +1,9 @@
+
+* Follow edn, forms that can have introduce the 'inc' function.
+* first class
+* higher order (mk-inc which builds a incrementor with a step)
+* show the classic functions
+** filter
+** map
+** reduce
+

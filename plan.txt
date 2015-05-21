@@ -1,0 +1,4 @@
+1 what is clojure (yellow) - st
+2 leiningen (orange) - rbf
+3 edn forms (blue) - rbf
+4 functions - st 
