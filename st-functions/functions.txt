@@ -1,9 +1,17 @@
 
 * Follow edn, forms that can have introduce the 'inc' function.
 * first class
+
+* Remark that + is not an operator but a function
+
+Advantages of prefix notation:
+** non ambiguous
+** no pb with arities
+
 * higher order (mk-inc which builds a incrementor with a step)
 * show the classic functions
 ** filter
 ** map
 ** reduce
+(lot of "exos" in 4clojure or exercism)
 
