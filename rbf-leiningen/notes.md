@@ -1,10 +1,10 @@
-**Table of Contents**  *(generated with [DocToc](http://doctoc.herokuapp.com/))*
+**Table of Contents**  *(generated a bit with [DocToc](http://doctoc.herokuapp.com/))*
 
-- [Install lein](#)
-	- [Troubleshooting](#)
-		- [java missing](#)
-- [Start a REPL](#)
-- [Create a project](#)
+- [Install lein](#install-lein)
+	- [Troubleshooting](#troubleshooting)
+		- [java missing](#java-missing)
+- [Start a REPL](#start-a-repl)
+- [Create a project](#create-a-project)
 
 
 # Install `lein`
