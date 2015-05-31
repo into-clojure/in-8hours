@@ -1,6 +1,10 @@
 # Install `lein`
 
-Web: http://leiningen.org
+Some pointers:
+
+- Web: http://leiningen.org
+- GitHub project: https://github.com/technomancy/leiningen
+- Leiningen Tutorial: https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md
 
 Use following commands on Mac OS X terminal:
 
