@@ -20,3 +20,20 @@ curl -fsSLO https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/l
   sudo mv lein $LEIN_PATH && \
   lein
 ```
+
+You should see something like the following:
+
+``` bash
+Downloading Leiningen to /Users/rob/.lein/self-installs/leiningen-2.5.1-standalone.jar now...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   406    0   406    0     0    529      0 --:--:-- --:--:-- --:--:--   529
+100 14.5M  100 14.5M    0     0  1093k      0  0:00:13  0:00:13 --:--:-- 1637k
+```
+
+> **Java missing**: If you do not have the `java` command-line tool you will see following error message:
+> ``` bash
+> No Java runtime present, requesting install.
+> ```
+> At the same time a dialog will ask you to install the Java Developer Kit to proceed:
+> ![Install JDK dialog](images/dialog_install_jdk_mac.png)
