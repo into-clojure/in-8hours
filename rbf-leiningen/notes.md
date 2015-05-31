@@ -74,20 +74,27 @@ See also: readme, faq, tutorial, news, sample, profiles, deploying, gpg,
 mixed-source, templates, and copying.
 ```
 
-> **Java missing**: If you do not have the `java` command-line tool you will see following error message instead:
-> ``` bash
-> No Java runtime present, requesting install.
-> ```
-> At the same time a dialog will ask you to install the Java Developer Kit to proceed:
-> ![Install JDK dialog](images/dialog_install_jdk_mac.png)
-> Click on `More Info...` and follow the instructions to install the JDK (you will be redirected to the Oracle website).
-> After installing the JDK verify that `java` command-line tool was properly installed, e.g.:
-> ```
-> $ java -version
-> java version "1.8.0_45"
-> Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
-> Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
-> ```
-> If so, you can now relaunch `lein` to proceed.
+## Troubleshooting
 
+### `java` missing
 
+If you do not have the `java` command-line tool you will see following error message instead:
+
+``` bash
+No Java runtime present, requesting install.
+```
+
+At the same time a dialog will ask you to install the Java Developer Kit to proceed:
+
+![Install JDK dialog](images/dialog_install_jdk_mac.png)
+
+Click on `More Info...` and follow the instructions to install the JDK (spoiler: you will be redirected to the Oracle website). After installing the JDK verify that `java` command-line tool was properly installed, e.g.:
+
+```
+$ java -version
+java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+```
+
+If so, you can now relaunch `lein` to proceed.
