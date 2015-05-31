@@ -200,7 +200,7 @@ We have to touch here a quick word on how `lein` allows an easy dependency manag
 
 First of all, note that the content of the `project.clj` file itself is written in Clojure. (somebody said _meta_? :tada: indeed, this should point towards some interesting meta-programming properties, which we will not even mention now).
 
-For now, let's focus on the last line, which begins with the word `:dependencies` (note the `:` starting the word). For the sake of easy, if we want to use a new library like e.g. `expectations` we have to add it here as a dependency providing the library name and version required following the same structure:
+For now, let's focus on the last line, which begins with the word `:dependencies` (note the `:` starting the word). For the sake of easy, if we want to use a new library, like e.g. [`expectations`](http://jayfields.com/expectations/) we have to add it here as a dependency providing the library name and version required following the same structure:
 
 ``` clojure
   :dependencies [[org.clojure/clojure "1.6.0"]
