@@ -1,10 +1,11 @@
 **Table of Contents**  *(generated a bit with [DocToc](http://doctoc.herokuapp.com/))*
 
 - [Install lein](#install-lein)
-	- [Troubleshooting](#troubleshooting)
-		- [java missing](#java-missing)
+  - [Troubleshooting](#troubleshooting)
+    - [java missing](#java-missing)
 - [Start a REPL](#start-a-repl)
 - [Create a project](#create-a-project)
+- [Clojure dependencies](#clojure-dependencies)
 
 
 # Install `lein`
@@ -183,3 +184,35 @@ We will look at them later, but the interesting part now is that if you start ag
 
 Moreover, `lein` keeps track of everything you type into the REPL in a history file proper to this project, i.e. `.lein-repl-history`.
 
+
+# Clojure dependencies
+
+We have to touch here a quick word on how `lein` allows an easy dependency management of the dependendies for your code. If you take a look into the contents of the `project.clj` file of the ìnto-clojure` project that we just created above, you should see something similar to this:
+
+``` clojure
+(defproject into-clojure "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :url "http://example.com/FIXME"
+  :license {:name "Eclipse Public License"
+            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :dependencies [[org.clojure/clojure "1.6.0"]])
+```
+
+First of all, note that the content of the `project.clj` file itself is written in Clojure. (somebody said _meta_? :tada: indeed, this should point towards some interesting meta-programming properties, which we will not even mention now).
+
+For now, let's focus on the last line, which begins with the word `:dependencies` (note the `:` starting the word). For the sake of easy, if we want to use a new library like e.g. `expectations` we have to add it here as a dependency providing the library name and version required following the same structure:
+
+``` clojure
+  :dependencies [[org.clojure/clojure "1.6.0"]
+                 [expectations "2.1.1"]]
+```
+
+To discover the name of the library and which version string to use, you can head to [Clojars](https://clojars.org). As they say:
+
+> Clojars is a dead easy community repository for open source Clojure libraries.
+
+For example, searching for `expectations` on the main Clojars page, you would find something like the following [page](https://clojars.org/expectations):
+
+![Expectations in Clojars](images/expectations_in_clojars.png)
+
+From here we directly copy&pasted the dependency string into the `project.clj` file above.
