@@ -126,16 +126,16 @@ user=> hello
 CompilerException java.lang.RuntimeException: Unable to resolve symbol: hello in this context, compiling:(NO_SOURCE_PATH:0:0) 
 ```
 
-At least it responds. Maybe we can be even more polite enquoting the word:
+Well... at least it responds. Maybe we can be even more polite enquoting the word:
 
 ```
 user=> "hello"
 "hello"
 ```
 
-Ok, that seems to work. Let's move on with the environment setup before we dive into `clojure` itself...
+Ok, that seems to work. Let's move on with the environment setup before we dive into `clojure` itself.
 
-As the intruductory text of the REPL indicates, you can exit the REPL with either `Control+D` `(exit)` or `(quit)`.
+As the intruductory text of the REPL indicates, you can exit the REPL with either `Control+D`, `(exit)` or `(quit)`.
 
 
 # Create a project
