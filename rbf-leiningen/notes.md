@@ -98,3 +98,75 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
 ```
 
 If so, you can now relaunch `lein` to proceed.
+
+# Start a REPL
+
+Once `lein` is installed, you can start a REPL right away with `lein repl`. Please go ahead and try it. You should see something like:
+
+```
+nREPL server started on port 58749 on host 127.0.0.1 - nrepl://127.0.0.1:58749
+REPL-y 0.3.5, nREPL 0.2.6
+Clojure 1.6.0
+Java HotSpot(TM) 64-Bit Server VM 1.7.0_65-b17
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+user=> 
+```
+
+The last line (`user=> `) is the REPL prompt waiting for your input. Be polite and say hello.
+
+```
+user=> hello
+
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: hello in this context, compiling:(NO_SOURCE_PATH:0:0) 
+```
+
+At least it responds. Maybe we can be even more polite enquoting the word:
+
+```
+user=> "hello"
+"hello"
+```
+
+Ok, that seems to work. Let's move on with the environment setup before we dive into `clojure` itself...
+
+As the intruductory text of the REPL indicates, you can exit the REPL with either `Control+D` `(exit)` or `(quit)`.
+
+
+# Create a project
+
+Starting a REPL right away as we just did is fast but lacks a bit of context. Let's setup a tiny context so that we control where things happen. For that we will create a new `lein` project with `lein new into-clojure`, where the last word is the name of the project. You will something like:
+
+```
+Generating a project called into-clojure based on the 'default' template.
+The default template is intended for library projects, not applications.
+To see other templates (app, plugin, etc), try `lein help new`.
+```
+
+You can now `cd into-clojure` and see that there are a couple of files set up for you.
+
+```
+$ ls -1aF
+./
+../
+.gitignore
+.lein-repl-history
+LICENSE
+README.md
+doc/
+project.clj
+resources/
+src/
+target/
+test/
+```
+
+We will look at them later, but the interesting part now is that if you start again a `lein repl` from within this project directory, the REPL will be contextualized with the project settings.
+
+Moreover, `lein` keeps track of everything you type into the REPL in a history file proper to this project, i.e. `.lein-repl-history`.
+
