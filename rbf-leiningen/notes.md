@@ -13,8 +13,10 @@ curl -fsSL --create-dirs -o $LEIN_SCRIPT $LEIN_SCRIPT_URL && chmod +x $LEIN_SCRI
 Alternative if the previous command doesn't work (requires you to `sudo` to modify `/usr/*`):
 
 ``` bash
+LEIN_PATH=/usr/local/bin/
 curl -fsSLO https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
   chmod +x lein && \
-  sudo mv lein /usr/local/bin/ && \
+  sudo mkdir -p  $LEIN_PATH && \
+  sudo mv lein $LEIN_PATH && \
   lein
 ```
