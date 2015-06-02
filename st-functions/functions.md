@@ -53,8 +53,11 @@ Write a function that returns a function (returning always 0)
 ```
 
 ### Structures seen as functions
+
 map : returns val for key
+
 Special case with :keyword!
+
 vector : return value by index
 
 ## Composition
