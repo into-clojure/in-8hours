@@ -19,7 +19,12 @@ Write a function that returns a function (returning always 0)
 
 ## The "classics"
 
-* doc
+### doc
+```
+(doc doc)
+"entrez"
+```
+
 * range
 
 ### filter
