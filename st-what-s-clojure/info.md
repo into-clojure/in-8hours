@@ -27,7 +27,9 @@ http://en.wikipedia.org/wiki/Software_transactional_memory
 Clojure has STM support built into the core language
 
 ### Syntax, what syntax ?
+```
 (f a b ...)
+```
 
 ### Homo-iconicity
 ... uniformity, makes macros "easy"
@@ -39,10 +41,11 @@ In other languages, for example, ruby has irb.
 ### Hosted language 
 On JVM (jar, ...)
 Intero, to Java:
+```
 exos.core=> (.println System/out "hello Java")
 hello Java
 nil
-
+```
 
 
 
