@@ -25,7 +25,10 @@ Write a function that returns a function (returning always 0)
 "entrez"
 ```
 
-* range
+### range
+```
+(range 10)
+```
 
 ### filter
 
@@ -48,4 +51,6 @@ Write a function that returns a function (returning always 0)
 
 ## Composition
 
-> (def dd [f] (comp f f))
+```
+(def dd [f] (comp f f))
+```
