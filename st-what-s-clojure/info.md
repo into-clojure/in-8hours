@@ -57,10 +57,3 @@ exos.core=> (.println System/out "hello Java")
 hello Java
 nil
 ```
-
-
-
-
-
-
-Illustrate interop with some live examples?
