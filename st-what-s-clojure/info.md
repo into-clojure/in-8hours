@@ -34,9 +34,9 @@ Clojure has STM support built into the core language
 
 ### REPL
 Read Eval Print Loop
-In other langugaes, for example, ruby has irb. 
+In other languages, for example, ruby has irb. 
 
-### Hosted languages 
+### Hosted language 
 On JVM (jar, ...)
 Intero, to Java:
 exos.core=> (.println System/out "hello Java")
