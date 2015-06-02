@@ -34,6 +34,8 @@ Write a function that returns a function (returning always 0)
 
 ```
 (filter even? (range 100))
+(defn vowel? [c] (> (.indexOf "aeiou" (int c)) -1))
+(defn sv [s] (filter (complement vowel?) s))
 ```
 
 ### map
