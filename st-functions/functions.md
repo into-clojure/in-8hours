@@ -28,6 +28,7 @@ Write a function that returns a function (returning always 0)
 ### range
 ```
 (range 10)
+(range) ;; ;-)
 ```
 
 ### filter
@@ -50,6 +51,11 @@ Write a function that returns a function (returning always 0)
 ```
 (defn my-c [xs] (reduce (fn[a e] (inc a)) 0 xs))
 ```
+
+### Structures seen as functions
+map : returns val for key
+Special case with :keyword!
+vector : return value by index
 
 ## Composition
 
