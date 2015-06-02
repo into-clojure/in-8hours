@@ -30,9 +30,6 @@ Clojure is a dialect of Lisp, and shares with Lisp the code-as-data philosophy a
 ### Function is a first class citizen.
 What is a pure function ? (no side effect, same input => same result)
 
-http://clojure.org/functional_programming
-Clojure is a functional programming language. It provides the tools to avoid mutable state, provides functions as first-class objects, and emphasizes recursive iteration instead of side-effect based looping. Clojure is impure, in that it doesn't force your program to be referentially transparent, and doesn't strive for 'provable' programs. The philosophy behind Clojure is that most parts of most programs should be functional, and that programs that are more functional are more robust.
-
 ### Favor of immutable structures
 Clojure provides a set of immutable lists, vectors, sets and maps.
 
