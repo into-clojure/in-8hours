@@ -19,10 +19,10 @@ Write a function that returns a function (returning always 0)
 
 ## The "classics"
 
+* doc
 * filter
 * map
 (not to be confused with the structure)
-
 * reduce
 
 
