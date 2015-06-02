@@ -22,13 +22,25 @@ Write a function that returns a function (returning always 0)
 * doc
 * range
 
-* filter
+### filter
+
+```
 (filter even? (range 100))
-* map
+```
+
+### map
 (not to be confused with the structure)
-> (map (fn [x] (* x x)) (range 10))
-* reduce
-> (defn my-c [xs] (reduce (fn[a e] (inc a)) 0 xs))
+
+```
+(map (fn [x] (* x x)) (range 10))
+```
+
+### reduce
+ 
+```
+(defn my-c [xs] (reduce (fn[a e] (inc a)) 0 xs))
+```
 
 ## Composition
+
 > (def dd [f] (comp f f))
