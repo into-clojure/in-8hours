@@ -1,14 +1,27 @@
+**Table of Contents**  *generated a bit with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [EDN format](#edn-format)
+  - [Purpose](#purpose)
+	- [General considerations](#general-considerations)
+	- [Built-in elements](#built-in-elements)
+		- [Scalars](#scalars)
+		- [Collections](#collections)
+
+
 # EDN format
 
 This is a summary of the EDN Format specification at https://github.com/edn-format/edn.
 
-> **edn** is an extensible data notation.
+## Purpose
 
-> It is used by Datomic and other applications as a data transfer format.
+1. **edn** is an extensible data notation.
 
-> **edn** is a system for the conveyance of values. It is not a type system, and has no schemas.
+1. Is a data transfer format. (think JSON or XML)
 
-> There is no enclosing element at the top level.
+1. **edn** is a system for the conveyance of values. It is not a type system, and has no schemas.
+
+1. There is no enclosing element at the top level.
+
 
 ## General considerations
 
