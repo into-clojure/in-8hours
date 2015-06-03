@@ -2,10 +2,10 @@
 
 - [EDN format](#edn-format)
   - [Purpose](#purpose)
-	- [General considerations](#general-considerations)
-	- [Built-in elements](#built-in-elements)
-		- [Scalars](#scalars)
-		- [Collections](#collections)
+  - [General considerations](#general-considerations)
+  - [Built-in elements](#built-in-elements)
+    - [Scalars](#scalars)
+    - [Collections](#collections)
 
 
 # EDN format
