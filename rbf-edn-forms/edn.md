@@ -6,6 +6,8 @@
   - [Built-in elements](#built-in-elements)
     - [Scalars](#scalars)
     - [Collections](#collections)
+    - [Tagged elements](#tagged-elements)
+  - [Other stuff](#other-stuff)
 
 
 # EDN format
