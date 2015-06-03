@@ -8,6 +8,9 @@
     - [Collections](#collections)
     - [Tagged elements](#tagged-elements)
   - [Other stuff](#other-stuff)
+- [Clojure topping](#clojure-topping)
+  - [Call things](#call-things)
+  - [Special forms](#special-forms) 
 
 
 # EDN format
@@ -81,3 +84,33 @@ This is a summary of the EDN Format specification at https://github.com/edn-form
 
 1. **Discard:** `#_` is the discard sequence, indicating that the next element (whether separated from `#_` by whitespace or not) is discarded. Note that the next element must still be a readable element.E.g. `[a b #_foo 42] => [a b 42]`
 
+
+# Clojure topping
+
+Clojure is a superset of the EDN format. Since Clojure is [homoiconic]() just need a _light_ layer on top of EDN which implies some few special words and adding a way to _call_ things.
+
+## Call things
+
+In Clojure the **first** element in a **list** will be called with the **rest** of the elements as arguments:
+
+``` clojure
+(function a b c)
+```
+
+And that's it. That's the one rule to retain in order to understand and write Clojure code. And there are just a handful.
+
+## Special forms
+
+Some words have a special meaning:
+
+1. **`let`**
+
+1. **`def`**
+
+1. **`fn`**
+
+1. **`if`**
+
+1. **`do`**
+
+1. And some few others like **`quote`**, **`var`** and **`try catch throw`**.
