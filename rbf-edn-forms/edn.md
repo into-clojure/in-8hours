@@ -44,14 +44,14 @@ This is a summary of the EDN Format specification at https://github.com/edn-form
 
 1. **floating point numbers:** 64-bit (double) precision is expected. In addition, a floating-point number may have the suffix `M` to indicate that exact precision is desired.
 
-## Collections
+### Collections
 
 1. **Lists:** A list is a sequence of values. Lists are represented by zero or more elements enclosed in parentheses `()`. Note that lists can be heterogeneous. E.g. `(a b 42)`.
 
-1. **vectors:** A vector is a sequence of values that supports random access. Vectors are represented by zero or more elements enclosed in square brackets `[]`. Note that vectors can be heterogeneous. E.g. `[a b 42]`.
+1. **Vectors:** A vector is a sequence of values that supports random access. Vectors are represented by zero or more elements enclosed in square brackets `[]`. Note that vectors can be heterogeneous. E.g. `[a b 42]`.
 
-1. **maps:** A map is a collection of associations between keys and values. Maps are represented by zero or more key and value pairs enclosed in curly braces `{}`. Each key should appear at most once. No semantics should be associated with the order in which the pairs appear. Keys and values can be elements of any type. E.g. `{:a 1, "foo" :bar, [1 2 3] four}`. (Note that the use of commas is optional, as they are parsed as whitespace.)
+1. **Maps:** A map is a collection of associations between keys and values. Maps are represented by zero or more key and value pairs enclosed in curly braces `{}`. Each key should appear at most once. No semantics should be associated with the order in which the pairs appear. Keys and values can be elements of any type. E.g. `{:a 1, "foo" :bar, [1 2 3] four}`. (Note that the use of commas is optional, as they are parsed as whitespace.)
 
-1. **sets:** A set is a collection of unique values. Sets are represented by zero or more elements enclosed in curly braces preceded by `#`: `#{}`. No semantics should be associated with the order in which the elements appear. Note that sets can be heterogeneous. E.g. `#{a b [1 2 3]}`
+1. **Sets:** A set is a collection of unique values. Sets are represented by zero or more elements enclosed in curly braces preceded by `#`: `#{}`. No semantics should be associated with the order in which the elements appear. Note that sets can be heterogeneous. E.g. `#{a b [1 2 3]}`
 
 
