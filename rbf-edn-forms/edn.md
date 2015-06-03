@@ -67,4 +67,15 @@ This is a summary of the EDN Format specification at https://github.com/edn-form
 
 1. **Sets:** A set is a collection of unique values. Sets are represented by zero or more elements enclosed in curly braces preceded by `#`: `#{}`. No semantics should be associated with the order in which the elements appear. Note that sets can be heterogeneous. E.g. `#{a b [1 2 3]}`
 
+### Tagged elements
+
+1. **`#inst`:** An instant in time. The tagged element is a string in `RFC-3339` format. E.g. `#inst "1985-04-12T23:20:50.52Z"`.
+
+1. **`#uuid`:** A [UUID](http://en.wikipedia.org/wiki/Universally_unique_identifier). The tagged element is a canonical UUID string representation. E.g. `#uuid "f81d4fae-7dec-11d0-a765-00a0c91e6bf6"`.
+
+## Other stuff
+
+1. **Comments:** If a `;` character is encountered outside of a string, that character and all subsequent characters to the next newline are be ignored.
+
+1. **Discard:** `#_` is the discard sequence, indicating that the next element (whether separated from `#_` by whitespace or not) is discarded. Note that the next element must still be a readable element.E.g. `[a b #_foo 42] => [a b 42]`
 
