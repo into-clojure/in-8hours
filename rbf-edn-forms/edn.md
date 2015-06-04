@@ -97,15 +97,25 @@ In Clojure the **first** element in a **list** will be called with the **rest** 
 (function a b c)
 ```
 
+===== NOTES =====
+
+Include:
+
+1. inside-out form evaluation
+1. concept of form return value
+1. explain "the return value is placed instead of the form when evaluated"
+
+===== /NOTES =====
+
 And that's it. That's the one rule to retain in order to understand and write Clojure code. And there are just a handful.
 
 ## Special forms
 
 Some words have a special meaning:
 
-1. **`let`**
-
 1. **`def`**
+
+1. **`let`**
 
 1. **`fn`**
 
@@ -114,3 +124,24 @@ Some words have a special meaning:
 1. **`do`**
 
 1. And some few others like **`quote`**, **`var`** and **`try catch throw`**.
+
+===== NOTES =====
+
+Pendant le cours quelqu'un a mentionné qu'on peut pas réassigner par example `+` en clojure... C'est une idée d'une moralité douteuse, mais ça n'a rien d'illégal:
+
+``` clojure
+(let [- +] (- 1 1))
+;=> 2
+```
+
+Mais heureusement ça marche pas avec les `special forms`:
+
+``` clojure
+(let [true false] (if true 1 2))
+;=> Exception Unsupported binding form: true  clojure.core/destructure/pb--4583 (core.clj:4103)
+
+(let [if do] (if true 1 2))
+;=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: do in this context, compiling:(/private/var/folders/hh/jyldvn_x5vb_xdyvhw05_csc0000gp/T/form-init1505842504353384041.clj:1:1)
+```
+
+===== /NOTES =====
