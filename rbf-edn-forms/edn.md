@@ -99,7 +99,7 @@ In Clojure the **first** element in a **list** will be called with the **rest** 
 
 ===== NOTES =====
 
-Include:
+Add:
 
 1. inside-out form evaluation
 1. concept of form return value
@@ -127,14 +127,14 @@ Some words have a special meaning:
 
 ===== NOTES =====
 
-Pendant le cours quelqu'un a mentionné qu'on peut pas réassigner par example `+` en clojure... C'est une idée d'une moralité douteuse, mais ça n'a rien d'illégal:
+During the first workshop somebody mentioned that operators like e.g. `+` cannot be overloaded in Clojure... Although is a questionable idea it has nothing of illegal:
 
 ``` clojure
 (let [- +] (- 1 1))
 ;=> 2
 ```
 
-Mais heureusement ça marche pas avec les `special forms`:
+But luckily it does not work with `special forms`:
 
 ``` clojure
 (let [true false] (if true 1 2))
