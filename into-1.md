@@ -1,6 +1,8 @@
 
 ### Your very first steps with Clojure
 
+* These notes are not meant to be an exhaustive presentation of Clojure, but rather help you discover this language. Would you notice any big mistake, discuss it in the Meetup group.*
+
 #### Play with the REPL
 We assume that Leiningen is installed.
 (see [install Leiningen](https://github.com/into-clojure/in-8hours/blob/master/rbf-leiningen/notes.md) for details.)
@@ -227,3 +229,8 @@ As you would have guessed, a shortcut is available: **defn**
 
 That's it (for the moment)...
 
+## License
+
+Copyright © 2015 into-clojure
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
