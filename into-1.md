@@ -1,7 +1,7 @@
 
 ### Your very first steps with Clojure
 
-* These notes are not meant to be an exhaustive presentation of Clojure, but rather help you discover this language. Would you notice any big mistake, discuss it in the Meetup group.*
+*These notes are not meant to be an exhaustive presentation of Clojure, but rather help you discover this language. Would you notice any big mistake, discuss it in the Meetup group.*
 
 #### Play with the REPL
 We assume that Leiningen is installed.
@@ -156,6 +156,9 @@ b
 ```
 
 #### let
+
+Similar to **def** but the scope is reduced.
+
 ```Clojure
 (let [x 10 y 2]) 
 ;; oups, x is still unknown
