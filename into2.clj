@@ -92,7 +92,6 @@ I;; Anything you type in here will be executed
 (filter divide-by-2? one-to-hundred)
 
 
-
 ;; exo : the list of one-to-hundred of numbers bigger than 50
 
 
@@ -193,10 +192,27 @@ I;; Anything you type in here will be executed
 ;;
 
 
+;; loop recur
+(defn kount 
+  ([xs] (kount xs 0))
+  ([xs r] 
+    (if 
+      (empty? xs)
+      r
+      (recur (rest xs) (inc r)))))
 
 
 ;; next : 
 ;; checks scores are valid ...
+;; in 3 winning sets, :a :a :a :b is not possible but :a :a :b :a yes ...
+
+;; first, rest... ?
+
+;; http://www.4clojure.com/problem/19
+
+;; http://www.4clojure.com/problem/21
+
+;; Faire un exo de 4 clojure ensemble
 
  ;; the datastructure map
 
