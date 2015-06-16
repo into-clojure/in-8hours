@@ -162,6 +162,39 @@ I;; Anything you type in here will be executed
     :a 
     :b))
 
+;; Bof bof...
+(defn winner-set [s]
+  (if (apply > s)
+    :a 
+    :b))
+
+(defn winner
+  [match]
+  (let [f (frek (map winner-set match))]
+    (if (> (:a f) (:b f))
+      :a
+      :b)))
+  
+;; 
+;; -----------------
+;;
+(defn count-set [s]
+  (if (apply > s)
+      1 
+      -1))
+
+(defn winner2
+  [match]
+  (if (pos? (apply + (map count-set match)))
+    :a
+    :b))
+;; 
+;; -----------------
+;;
+
+
+
+
 ;; next : 
 ;; checks scores are valid ...
 
